@@ -68,7 +68,7 @@ func ChangesParser(url string) ([]ChangeList, error) {
 	}
 
 	var ChangesList []ChangeList
-	doc.Find("body div#cont form div#table table.lux tr.exams").Each(func(i int, tr *goquery.Selection) {
+	doc.Find("body div#cont form div#table table.lux tbody tr.exams").Each(func(i int, tr *goquery.Selection) {
 		var cells []string
 		tr.Find("td").Each(func(j int, td *goquery.Selection) {
 			cells = append(cells, strings.TrimSpace(td.Text()))
