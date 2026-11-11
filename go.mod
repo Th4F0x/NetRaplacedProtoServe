@@ -1,4 +1,4 @@
-module github.com/Th4Fox/NetRaplaced
+module github.com/Th4Fox/NetRaplacedProto
 
 go 1.27.3
 
